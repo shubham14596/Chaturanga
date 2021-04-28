@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#330900">
+    <TextView
+        android:id="@+id/p2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toStartOf="@id/drawarea"
+        android:textSize="20sp"
+        android:textColor="@color/pname"
+        android:background="@color/nameColor"
+        android:padding="15dp"
+        android:text="Player 2"
+        />
+    <TextView
+        android:id="@+id/p3"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/drawarea"
+        android:textSize="20sp"
+        android:textColor="@color/pname"
+        android:background="@color/nameColor"
+        android:text="Player 3"
+        />
+    <ImageView
+        android:id="@+id/drawarea"
+        android:contentDescription="Board"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/p1"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toStartOf="@id/drawarea"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:textColor="@color/pname"
+        android:background="@color/nameColor"
+        android:text="Player 1"
+        />
+    <TextView
+        android:id="@+id/p4"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/drawarea"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:textColor="@color/pname"
+        android:background="@color/nameColor"
+        android:text="Player 4"
+        />
+
+</RelativeLayout>

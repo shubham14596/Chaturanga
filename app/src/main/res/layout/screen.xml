@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/table_bg_90">
+
+    <TextView
+        android:id="@+id/p2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_above="@id/drawarea"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="@color/pname"
+        android:background="@color/nameColor"
+        android:padding="15dp"
+        android:text="Player 2"
+        />
+    <TextView
+        android:id="@+id/p3"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_above="@id/drawarea"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:textColor="@color/pname"
+        android:background="@color/nameColor"
+        android:text="Player 3"
+        />
+    <ImageView
+        android:id="@+id/drawarea"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        
+        />
+    <TextView
+        android:id="@+id/p1"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/drawarea"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="@color/pname"
+        android:background="@color/nameColor"
+        android:text="Player 1"
+        />
+    <TextView
+        android:id="@+id/p4"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/drawarea"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:textColor="@color/pname"
+        android:background="@color/nameColor"
+        android:text="Player 4"
+        />
+    <TextView
+        android:text="Player 1 turn"
+        android:id="@+id/turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/p1"
+        android:textColor="#f68"
+        />
+    <Button
+        android:text="Skip Turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/turn"
+        android:textColor="#fff"
+        android:onClick="onSkip"
+        android:background="@drawable/skip_btn"/>
+</RelativeLayout>
